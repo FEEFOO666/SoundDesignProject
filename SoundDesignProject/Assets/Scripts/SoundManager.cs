@@ -27,6 +27,5 @@ public class SoundManager : MonoBehaviour
     public AudioClip pauseMenuSfx;
     //Game Over
     public AudioClip gameOverSfx;
-    //Before Start
-    public AudioClip beforePressStartButtonSfx;
+   
 }
