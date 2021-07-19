@@ -37,6 +37,11 @@ public class Points : MonoBehaviour
                 newObject.GetComponent<TextMesh>().text = pValue.ToString();
                 newObject.GetComponent<TextMesh>().color = new Color(255, 0, 0);
             }
+            else if (sH.hit.transform.gameObject.layer == 13)
+            {
+                newObject.GetComponent<TextMesh>().text = pValue.ToString();
+                newObject.GetComponent<TextMesh>().color = new Color(0, 128, 0);
+            }
         }
     }
 }
