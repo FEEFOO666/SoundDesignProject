@@ -21,6 +21,7 @@ public class Shooting : MonoBehaviour
 
     //REFS
     public PauseMenu pM; //reference to the Pause Menu Script
+    public Timer tR; // reference to timer script
     public SoundManager sM; //reference to Sound Manager Script
 
     //if the game is not paused and last time fired is 0 will fire a raycast and play audio for gunshot
@@ -63,14 +64,14 @@ public class Shooting : MonoBehaviour
                 bS.Play();
                 hit.transform.SendMessage("HitByRay");
             }
-            else if(hit.transform.gameObject.layer == 12)
+            else if (hit.transform.gameObject.layer == 12)
             {
                 bS.clip = sM.negativeHit;
                 bS.Play();
                 hit.transform.SendMessage("HitByRay");
             }
             //if the raycast hits an object with layer 10 it will send a message to another script to fire that off
-            else if (hit.transform.gameObject.layer == 10)
+            else if (hit.transform.gameObject.layer == 10 && tR.timerRunning == false)
             {
                 gameMusic.Play();
                 hit.transform.SendMessage("StartGameNow");

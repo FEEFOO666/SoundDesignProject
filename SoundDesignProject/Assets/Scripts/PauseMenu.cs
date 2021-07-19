@@ -27,6 +27,7 @@ public class PauseMenu : MonoBehaviour
             if (gameIsPaused)
             {
                 Resume();
+                gM.UnPause();
             }
             else
             {
