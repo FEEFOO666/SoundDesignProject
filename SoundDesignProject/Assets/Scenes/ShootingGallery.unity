@@ -5132,8 +5132,8 @@ MonoBehaviour:
   negativeHit: {fileID: 8300000, guid: 5faf266658a73324d9bdf829bdf5e40a, type: 3}
   startBell:
   - {fileID: 0}
-  pauseMenuSfx: {fileID: 8300000, guid: 6f07f8742450d8241a641a8c69e32ada, type: 3}
-  gameOverSfx: {fileID: 8300000, guid: bc9ba9aacccfde1459fa20f819610072, type: 3}
+  pauseMenuSfx: {fileID: 8300000, guid: 7d025b7fc4625eb479e6ab89d4d7d460, type: 3}
+  gameOverSfx: {fileID: 8300000, guid: da0bbe2a38eb4c34492f8d454dbda424, type: 3}
 --- !u!4 &831695338
 Transform:
   m_ObjectHideFlags: 0
@@ -7733,7 +7733,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh31220
+  m_Name: pb_Mesh31270
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11960,7 +11960,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1a84718e9dc06ce4b8a38bbabc34e9b4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8bf2a0b093a69b3409e098df9d989df9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
