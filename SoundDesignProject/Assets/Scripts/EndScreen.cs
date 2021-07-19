@@ -17,6 +17,7 @@ public class EndScreen : MonoBehaviour
    
     public SoundManager sM;
     public AudioSource aS;
+    public AudioSource gM; // Game Music
 
 
     //will activate end screen GUI , deactivate all othe GUI, display the players score and unlock mouse pointer
@@ -30,6 +31,7 @@ public class EndScreen : MonoBehaviour
         DisplayScore();
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
+        gM.Stop();
     }
 
     //will take the players end score and convert it to text

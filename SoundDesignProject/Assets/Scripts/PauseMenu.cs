@@ -15,6 +15,7 @@ public class PauseMenu : MonoBehaviour
     //REFS
     public SoundManager sM;
     public AudioSource aS;
+    public AudioSource gM;
 
     //if key is hit will open pause menu, if escape hit again will return to game
     void Update()
@@ -30,6 +31,7 @@ public class PauseMenu : MonoBehaviour
             else
             {
                 Pause();
+                gM.Pause();
             }
         }
     }
