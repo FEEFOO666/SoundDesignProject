@@ -22,8 +22,8 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(pKey))
         {
-            aS.clip = sM.pauseMenuSfx;
-            aS.Play();
+            //aS.clip = sM.pauseMenuSfx;
+            //aS.Play();
             if (gameIsPaused)
             {
                 Resume();
